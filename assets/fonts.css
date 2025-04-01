@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Copperplate CC';
+  src: url('/fonts/CopperplateCC-Heavy.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Copperplate CC';
+  src: url('/fonts/CopperplateCC-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
