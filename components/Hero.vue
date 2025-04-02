@@ -1,6 +1,7 @@
 <template>
 	<section
-		class="h-[824px] bg-background-secondary flex items-center relative isolate overflow-hidden"
+		class="bg-background-secondary flex items-center relative isolate overflow-hidden max-md:items-end pb-12"
+		style="height: calc(100vh - var(--header-height))"
 	>
 		<Container class="text-[#ffffff] relative z-[2]">
 			<h1
@@ -18,8 +19,12 @@
 			</p>
 
 			<div class="flex gap-4 items-center">
-				<Button class="bg-primary text-[#ffffff]">Produkty</Button>
-				<Button class="text-content-primary bg-background-primary">
+				<Button class="bg-primary text-[#ffffff] hover:bg-[#a58252]"
+					>Produkty</Button
+				>
+				<Button
+					class="text-content-primary bg-background-primary hover:bg-[#d0cece]"
+				>
 					<span class="max-md:hidden"> ZÁKAZKOVÁ VÝROBA </span>
 
 					<span class="hidden max-md:block"> NA ZÁKAZKU </span>
@@ -27,13 +32,28 @@
 			</div>
 		</Container>
 
-		<img
-			src="/images/bg/hero.jpg"
-			class="absolute right-0 top-0 w-1/2 h-full object-cover z-[1] max-md:w-full"
-		/>
+		<div
+			class="absolute right-0 top-0 w-2/3 h-full max-md:w-full z-[1] hero-image max-md:h-[70%]"
+		></div>
 
 		<Letokruh
-			class="absolute left-0 top-0 h-full object-cover z-0 text-content-secondary/15 scale-125 max-md:hidden"
+			class="absolute left-0 top-0 h-full object-cover z-0 text-content-secondary/15 scale-125"
 		/>
 	</section>
 </template>
+
+<style scoped>
+.hero-image {
+	background-image: linear-gradient(to left, transparent, #342f2c),
+		url(/images/bg/hero.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+@media not all and (min-width: 768px) {
+	.hero-image {
+		background-image: linear-gradient(to bottom, transparent, #342f2c),
+			url(/images/bg/hero.jpg);
+	}
+}
+</style>

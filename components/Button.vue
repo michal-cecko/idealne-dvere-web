@@ -1,7 +1,7 @@
 <template>
 	<component
 		:is="component"
-		class="font-serif text-2xl py-4 px-10 uppercase max-md:text-base max-md:py-3 max-md:px-7"
+		class="font-serif text-2xl py-4 px-10 uppercase max-md:text-base max-md:py-3 max-md:px-7 transition-colors"
 		:to="to ?? null"
 		v-bind="$attrs"
 	>

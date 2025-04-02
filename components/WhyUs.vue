@@ -1,11 +1,13 @@
 <template>
-	<section class="bg-background-primary text-content-primary py-28">
+	<section id="why-us" class="bg-background-primary text-content-primary py-28">
 		<Container class="flex gap-16 max-xl:flex-col">
 			<div class="max-w-lg shrink-0">
 				<div
 					class="mb-24 pl-14 max-md:before:hidden max-md:pl-0 max-md:mb-12 before:content-[''] relative before:absolute before:w-[4px] before:bg-primary before:top-0 before:bottom-0 before:left-0"
 				>
-					<h4 class="text-xl text-primary font-bold mb-4">PREČO SI VYBRAŤ NÁS</h4>
+					<h4 class="text-xl text-primary font-bold mb-4 tracking-widest">
+						PREČO SI VYBRAŤ NÁS
+					</h4>
 
 					<h2 class="font-serif text-4xl font-bold">
 						Dôvody, prečo s nami budete spokojní
@@ -22,8 +24,14 @@
 				<p class="text-3xl font-medium">bezproblémových inštalácií</p>
 			</div>
 
-			<div class="grid grid-cols-2 gap-x-6 gap-y-16 max-md:grid-cols-1">
-				<div v-for="(item, key) in items" :key class="flex gap-10 items-start">
+			<div
+				class="grid grid-cols-2 gap-x-6 gap-y-16 max-md:grid-cols-1 max-md:gap-y-14"
+			>
+				<div
+					v-for="(item, key) in items"
+					:key
+					class="flex gap-10 items-start max-md:flex-col max-md:gap-9"
+				>
 					<div class="bg-primary w-[87px] aspect-square shrink-0">
 						<img
 							:src="item.icon"

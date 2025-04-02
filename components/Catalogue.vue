@@ -1,9 +1,10 @@
 <template>
 	<section
+		id="catalogue"
 		class="bg-background-primary pt-32 pb-52 relative overflow-hidden isolate max-lg:pb-10"
 	>
 		<Container class="mb-40 max-lg:mb-16">
-			<h4 class="text-primary uppercase text-xl font-bold mb-4">
+			<h4 class="text-primary uppercase text-xl font-bold mb-4 tracking-widest">
 				DODÁVANÉ VÝROBKY
 			</h4>
 
@@ -24,10 +25,10 @@
 				<div
 					v-for="(card, key) in cards"
 					:key
-					class="flex flex-col gap-9 relative z-10"
+					class="flex flex-col gap-9 relative"
 					data-item
 				>
-					<div class="h-[272px]">
+					<div class="h-[411px] max-md:h-[292px]">
 						<img :src="card.img" class="w-full h-full object-cover" />
 					</div>
 
@@ -35,10 +36,14 @@
 						class="absolute bg-background-secondary h-36 w-[742px] flex items-center justify-between px-16 max-lg:p-6 text-content-secondary max-lg:flex-col max-lg:max-w-[344px] max-lg:w-full z-20"
 						data-banner
 					>
-						<h3 class="font-serif text-[28px] shrink-0">{{ card.title }}</h3>
+						<h3
+							class="font-serif text-[28px] shrink-0 text-white max-lg:self-start font-bold"
+						>
+							{{ card.title }}
+						</h3>
 
 						<Button
-							class="bg-primary text-white text-xl max-lg:w-full"
+							class="bg-primary text-white text-xl max-lg:w-full text-center hover:bg-[#a58252] z-10"
 							:to="card.link"
 							:external="card.link.includes('http')"
 							:blank="card.link.includes('http') ? '_blank' : ''"

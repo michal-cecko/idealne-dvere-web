@@ -4,9 +4,17 @@ html {
   scroll-behavior: smooth;
 }
 
-body:has(#mobile-menu-input:checked) {
-  overflow: hidden;
+:root {
+  --header-height: 112px;
+}
 
+@media (max-width: 768px) {
+  :root {
+    --header-height: 71px !important;
+  }
+}
+
+body:has(#mobile-menu-input:checked) {
   #mobile-menu {
     transform: translateX(0);
   }

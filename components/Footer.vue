@@ -65,7 +65,10 @@
 			</div>
 		</div>
 
-		<div class="aspect-square shrink-0 h-full bg-primary relative">
+		<div
+			class="aspect-square shrink-0 h-full bg-primary relative"
+			data-map-holder
+		>
 			<iframe
 				:src
 				style="border: 0"
@@ -76,7 +79,8 @@
 			></iframe>
 
 			<div
-				class="absolute inset-0 bg-[#BA9E76] opacity-60 pointer-events-none z-50"
+				data-overlay
+				class="absolute inset-0 bg-[#BA9E76] opacity-60 pointer-events-none z-50 max-md:hidden transition-opacity duration-500"
 			></div>
 		</div>
 
@@ -98,3 +102,9 @@ const { mapIframeSrc: src, links } = defineProps({
 	}
 })
 </script>
+
+<style scoped>
+[data-map-holder]:hover [data-overlay] {
+	opacity: 0;
+}
+</style>

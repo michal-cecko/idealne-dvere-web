@@ -16,7 +16,9 @@
 			class="bg-background-secondary text-white pt-24 pb-48 w-2/3 z-[5] max-md:w-full max-md:py-16 relative"
 		>
 			<div class="max-w-xl mx-auto pl-5 max-md:px-5">
-				<h4 class="text-xl text-primary font-bold mb-9">ZÁKAZKOVÁ VÝROBA</h4>
+				<h4 class="text-xl text-primary font-bold mb-9 tracking-widest">
+					ZÁKAZKOVÁ VÝROBA
+				</h4>
 
 				<h2
 					class="font-serif max-md:before:hidden text-4xl font-bold mb-5 leading-snug before:content-[''] before:w-[90px] before:aspect-square before:bg-primary before:absolute relative before:z-0 before:-translate-x-1/3 before:-translate-y-1/4"

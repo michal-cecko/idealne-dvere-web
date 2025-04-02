@@ -13,7 +13,12 @@
 			/>
 		</svg>
 
-		<input id="mobile-menu-input" type="checkbox" class="sr-only" />
+		<input
+			id="mobile-menu-input"
+			type="checkbox"
+			class="sr-only"
+			v-model="mobileMenuOpen"
+		/>
 	</label>
 
 	<Teleport to="body">
@@ -38,3 +43,7 @@
 		</aside>
 	</Teleport>
 </template>
+
+<script setup>
+const mobileMenuOpen = defineModel('isOpen', { default: false })
+</script>

@@ -1,7 +1,7 @@
 <template>
 	<section class="bg-background-secondary text-white py-14">
 		<Container
-			class="flex justify-between items-center max-md:flex-col max-md:gap-8"
+			class="flex justify-between items-start max-md:flex-col max-md:gap-8"
 		>
 			<div v-for="(item, key) in items" :key="key" class="flex gap-6">
 				<div class="text-primary w-16 shrink-0 text-center *:inline-block">

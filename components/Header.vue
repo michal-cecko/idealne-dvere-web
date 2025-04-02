@@ -1,6 +1,7 @@
 <template>
 	<header
-		class="h-28 relative max-md:h-[71px] bg-primary flex items-center justify-center font-serif font-bold text-xl text-[#fff] uppercase gap-24"
+		class="z-20 sticky top-0 bg-primary flex items-center justify-center font-serif font-bold text-xl text-[#fff] uppercase gap-24"
+		style="height: var(--header-height)"
 	>
 		<NuxtLink
 			v-for="(link, key) in [...links].splice(0, links.length / 2)"
@@ -28,9 +29,10 @@
 			{{ link.name }}
 		</NuxtLink>
 
-		<MobileMenu>
+		<MobileMenu v-model:isOpen="mobileMenuOpen">
 			<NuxtLink
 				v-for="(link, key) in links"
+				@click.stop="mobileMenuOpen = false"
 				:key
 				class="uppercase font-serif text-3xl font-bold"
 				:to="link.to"
@@ -42,6 +44,8 @@
 </template>
 
 <script setup>
+const mobileMenuOpen = ref(false)
+
 const { links } = defineProps({
 	links: {
 		type: Array,
