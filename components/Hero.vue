@@ -6,12 +6,13 @@
 	>
 		<Container class="text-[#ffffff] relative z-[2]">
 			<h1
-				class="uppercase text-6xl font-serif text-white max-w-3xl mb-10 leading-snug max-md:text-3xl font-bold max-md:mb-5"
+				class="uppercase text-6xl font-serif text-white max-w-3xl mb-10 leading-snug max-md:text-4xl font-bold max-md:mb-8"
 			>
-				prémiové drevené dvere pre váš vysnívaný domov
+				prémiové drevené dvere pre váš
+				<span class="max-md:hidden">vysnívaný </span>domov
 			</h1>
 
-			<div class="h-1 w-28 bg-primary mb-10 max-md:mb-5"></div>
+			<div class="h-1 w-28 bg-primary mb-10 max-md:mb-10"></div>
 
 			<p class="text-xl text-content-secondary mb-14 max-w-3xl max-md:hidden">
 				Vybavte si domov dverami, ktoré vám vyhovujú. Môžete si vybrať z našich

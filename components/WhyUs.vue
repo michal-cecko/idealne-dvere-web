@@ -1,7 +1,7 @@
 <template>
 	<section
 		id="why-us"
-		class="bg-background-primary text-content-primary py-28"
+		class="bg-background-primary text-content-primary py-28 max-md:pt-16"
 		style="scroll-margin-top: var(--header-height)"
 	>
 		<Container class="flex gap-16 max-xl:flex-col">

@@ -1,7 +1,7 @@
 <template>
 	<section
 		id="catalogue"
-		class="bg-background-primary pt-32 pb-52 relative overflow-hidden isolate max-lg:pb-10"
+		class="bg-background-primary pt-32 pb-52 relative overflow-hidden isolate max-lg:pb-10 max-md:pt-16"
 		style="scroll-margin-top: var(--header-height)"
 	>
 		<Container class="mb-40 max-lg:mb-16">
