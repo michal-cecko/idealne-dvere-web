@@ -2,7 +2,7 @@
 	<section
 		class="flex items-center relative isolate overflow-hidden max-md:items-end pb-12"
 		id="hero"
-		style="height: calc(100vh - var(--header-height))"
+		style="height: calc(100svh - var(--header-height))"
 	>
 		<Container class="text-[#ffffff] relative z-[2]">
 			<h1
@@ -19,7 +19,7 @@
 				bez zbytočných kompromisov.
 			</p>
 
-			<div class="flex gap-4 items-center">
+			<div class="flex gap-4 items-center flex-wrap">
 				<Button class="bg-primary text-[#ffffff] hover:bg-[#a58252]"
 					>Produkty</Button
 				>
