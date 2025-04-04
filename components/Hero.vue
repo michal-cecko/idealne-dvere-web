@@ -21,11 +21,12 @@
 			</p>
 
 			<div class="flex gap-4 items-center flex-wrap">
-				<Button class="bg-primary text-[#ffffff] hover:bg-[#a58252]"
+				<Button class="bg-primary text-[#ffffff] hover:bg-[#a58252]" to="#catalogue"
 					>Produkty</Button
 				>
 				<Button
 					class="text-content-primary bg-background-primary hover:bg-[#d0cece]"
+					to="#contact"
 				>
 					<span class="max-md:hidden"> ZÁKAZKOVÁ VÝROBA </span>
 
