@@ -13,10 +13,7 @@ export default defineNuxtConfig({
 			meta: [
 				{
 					name: 'description',
-					content: `Stolárstvo z Oščadnice ponúka cenovo dostupné dvere na mieru,
-          zárubne a kovanie bez zbytočných prirážok. Špecializujeme sa na výrobu kvalitných drevených,
-          laminátových a kovových dverí za rozumné ceny. Vyrábame presne podľa vašich rozmerov a rozpočtu.
-          Spoľahlivá montáž v celom regióne Kysúc. Neplaťte viac - požiadajte o cenovú ponuku ešte dnes!`
+					content: `Stolárstvo z Oščadnice ponúka cenovo dostupné dvere na mieru, zárubne a kovanie bez zbytočných prirážok. Špecializujeme sa na výrobu kvalitných drevených, laminátových a kovových dverí za rozumné ceny. Vyrábame presne podľa vašich rozmerov a rozpočtu. Spoľahlivá montáž v celom regióne Kysúc. Neplaťte viac - požiadajte o cenovú ponuku ešte dnes!`
 				}
 			],
 			link: [{ rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }]
