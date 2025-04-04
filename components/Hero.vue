@@ -1,6 +1,7 @@
 <template>
 	<section
-		class="bg-background-secondary flex items-center relative isolate overflow-hidden max-md:items-end pb-12"
+		class="flex items-center relative isolate overflow-hidden max-md:items-end pb-12"
+		id="hero"
 		style="height: calc(100vh - var(--header-height))"
 	>
 		<Container class="text-[#ffffff] relative z-[2]">
@@ -35,14 +36,24 @@
 		<div
 			class="absolute right-0 top-0 w-2/3 h-full max-md:w-full z-[1] hero-image max-md:h-[70%]"
 		></div>
-
-		<Letokruh
-			class="absolute left-0 top-0 h-full object-cover z-0 text-content-secondary/15 scale-125"
-		/>
 	</section>
 </template>
 
 <style scoped>
+#hero {
+	background-color: #342f2c;
+	position: relative;
+
+	&::before {
+		content: '';
+		background: url('/images/letokruh/light.png');
+		background-size: contain;
+		background-repeat: repeat;
+		position: absolute;
+		inset: 0;
+	}
+}
+
 .hero-image {
 	background-image: linear-gradient(to left, transparent, #342f2c),
 		url(/images/bg/hero.jpg);
@@ -52,8 +63,8 @@
 
 @media not all and (min-width: 768px) {
 	.hero-image {
-		background-image: linear-gradient(to bottom, transparent, #342f2c),
-			url(/images/bg/hero.jpg);
+		background-image: transparent, url(/images/bg/hero.jpg);
+		background-position: 90%;
 	}
 }
 </style>

@@ -1,7 +1,8 @@
 <template>
 	<section
 		id="contact"
-		class="bg-[#ECE5D3] py-28 flex justify-between relative overflow-hidden isolate max-md:py-0 max-md:flex-col-reverse"
+		class="py-28 flex justify-between relative overflow-hidden isolate max-md:py-0 max-md:flex-col-reverse"
+		style="scroll-margin-top: var(--header-height)"
 	>
 		<div
 			class="relative w-1/3 flex justify-center items-center z-10 max-md:w-full max-md:h-[466px]"
@@ -13,6 +14,7 @@
 		</div>
 
 		<div
+			data-bg-image
 			class="bg-background-secondary text-white pt-24 pb-48 w-2/3 z-[5] max-md:w-full max-md:py-16 relative"
 		>
 			<div class="max-w-xl mx-auto pl-5 max-md:px-5">
@@ -53,14 +55,22 @@
 					>
 				</div>
 			</div>
-
-			<Letokruh
-				class="hidden max-md:block absolute inset-0 pointer-events-none z-0 opacity-10"
-			/>
 		</div>
-
-		<Letokruh
-			class="absolute left-0 w-full scale-150 pointer-events-none text-[#342F2C] opacity-10 z-0"
-		/>
 	</section>
 </template>
+
+<style scoped>
+#contact {
+	background: url('/images/letokruh/dark.png'), #ece5d3;
+	background-size: contain;
+	background-repeat: repeat;
+}
+
+@media not all and (min-width: 768px) {
+	[data-bg-image] {
+		background: url('/images/letokruh/light.png'), #342f2c;
+		background-size: cover;
+		background-repeat: repeat;
+	}
+}
+</style>

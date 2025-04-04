@@ -24,7 +24,7 @@
 	<Teleport to="body">
 		<aside
 			id="mobile-menu"
-			class="fixed flex-col overflow-hidden justify-center items-center gap-16 inset-0 bg-background-secondary text-white z-50 hidden max-md:flex translate-x-full transition-transform"
+			class="fixed flex-col overflow-hidden justify-center items-center gap-16 inset-0 text-white z-50 hidden max-md:flex translate-x-full transition-transform"
 		>
 			<label
 				for="mobile-menu-input"
@@ -36,10 +36,6 @@
 			<img src="/images/logo.svg" class="absolute top-0 w-28" />
 
 			<slot />
-
-			<Letokruh
-				class="absolute inset-0 pointer-events-none z-0 opacity-15 scale-150"
-			/>
 		</aside>
 	</Teleport>
 </template>
@@ -47,3 +43,11 @@
 <script setup>
 const mobileMenuOpen = defineModel('isOpen', { default: false })
 </script>
+
+<style scoped>
+#mobile-menu {
+	background: url('/images/letokruh/light.png'), #342f2c;
+	background-size: cover;
+	background-repeat: repeat;
+}
+</style>

@@ -2,6 +2,7 @@
 	<section
 		id="catalogue"
 		class="bg-background-primary pt-32 pb-52 relative overflow-hidden isolate max-lg:pb-10"
+		style="scroll-margin-top: var(--header-height)"
 	>
 		<Container class="mb-40 max-lg:mb-16">
 			<h4 class="text-primary uppercase text-xl font-bold mb-4 tracking-widest">
@@ -54,10 +55,6 @@
 				</div>
 			</div>
 		</Container>
-
-		<Letokruh
-			class="absolute bottom-0 w-full scale-150 max-lg:scale-[2.5] pointer-events-none text-[#342F2C] opacity-10 z-0"
-		/>
 	</section>
 </template>
 
@@ -91,6 +88,13 @@ const { cards } = defineProps({
 		z-index: 0;
 		translate: -50% -10%;
 	}
+}
+
+#catalogue {
+	background: url('/images/letokruh/dark.png'), #ece5d3;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom;
 }
 
 [data-item] {

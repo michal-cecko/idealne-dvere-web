@@ -4,9 +4,8 @@
 	>
 		<div
 			class="relative overflow-hidden grow text-[#FFFBEF16] flex flex-col items-center max-md:h-96"
+			data-footer-logo-bg
 		>
-			<Letokruh class="absolute" />
-
 			<img src="/images/logo.svg" class="max-md:w-48" />
 		</div>
 
@@ -106,5 +105,11 @@ const { mapIframeSrc: src, links } = defineProps({
 <style scoped>
 [data-map-holder]:hover [data-overlay] {
 	opacity: 0;
+}
+
+[data-footer-logo-bg] {
+	background: url('/images/letokruh/light.png');
+	background-size: cover;
+	background-repeat: repeat;
 }
 </style>
