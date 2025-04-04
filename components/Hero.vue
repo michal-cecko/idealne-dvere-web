@@ -63,7 +63,8 @@
 
 @media not all and (min-width: 768px) {
 	.hero-image {
-		background-image: transparent, url(/images/bg/hero.jpg);
+		background-image: linear-gradient(to bottom, transparent, #342f2c),
+			url(/images/bg/hero.jpg);
 		background-position: 90%;
 	}
 }
