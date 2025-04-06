@@ -2,9 +2,9 @@
 	<section
 		class="flex items-center relative isolate overflow-hidden max-md:items-end pb-12"
 		id="hero"
-		style="height: calc(100svh - var(--header-height))"
+		style="min-height: calc(100svh - var(--header-height))"
 	>
-		<Container class="text-[#ffffff] relative z-[2]">
+		<Container class="text-[#ffffff] relative z-[2] py-12 max-md:py-0">
 			<h1
 				class="uppercase text-6xl font-serif text-white max-w-3xl mb-10 leading-snug max-md:text-4xl font-bold max-md:mb-8"
 			>

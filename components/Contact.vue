@@ -10,6 +10,7 @@
 			<img
 				src="/images/bg/zakazk 1.jpg"
 				class="absolute w-auto h-[676px] object-cover translate-x-1/4 max-md:static max-md:h-full max-md:translate-x-0 max-md:w-full"
+				alt="Ilustrácia"
 			/>
 		</div>
 

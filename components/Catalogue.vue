@@ -30,7 +30,11 @@
 					data-item
 				>
 					<div class="h-[411px] max-md:h-[292px]">
-						<img :src="card.img" class="w-full h-full object-cover" />
+						<img
+							:src="card.img"
+							class="w-full h-full object-cover"
+							:alt="card.title"
+						/>
 					</div>
 
 					<div

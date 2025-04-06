@@ -6,7 +6,7 @@
 			class="relative overflow-hidden grow text-[#FFFBEF16] flex flex-col items-center max-md:h-96"
 			data-footer-logo-bg
 		>
-			<img src="/images/logo.svg" class="max-md:w-48" />
+			<img src="/images/logo.svg" class="max-md:w-48" alt="Logo" />
 		</div>
 
 		<div

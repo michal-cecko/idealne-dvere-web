@@ -33,7 +33,7 @@
 				&times;
 			</label>
 
-			<img src="/images/logo.svg" class="absolute top-0 w-28" />
+			<img src="/images/logo.svg" class="absolute top-0 w-28" alt="Logo" />
 
 			<slot />
 		</aside>

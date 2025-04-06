@@ -15,7 +15,7 @@
 		<div class="relative w-32 self-start max-md:w-28">
 			<img
 				src="/images/logo.svg"
-				alt="logo"
+				alt="Logo"
 				class="w-full absolute top-0 left-0 z-20"
 			/>
 		</div>

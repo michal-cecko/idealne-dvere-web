@@ -40,6 +40,7 @@
 						<img
 							:src="item.icon"
 							class="w-20 -translate-x-1/4 translate-y-1/3 max-md:translate-x-1/3"
+							:alt="item.title"
 						/>
 					</div>
 					<div>
