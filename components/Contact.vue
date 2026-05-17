@@ -27,7 +27,7 @@
 					class="font-serif max-md:before:hidden text-4xl font-bold mb-5 leading-snug before:content-[''] before:w-[90px] before:aspect-square before:bg-primary before:absolute relative before:z-0 before:-translate-x-1/3 before:-translate-y-1/4"
 				>
 					<span class="relative z-[1]">
-						NENAŠLI STE TIe pravé dvere pre vás? nevadí!
+						Máte svojho favorita? Potrebujete poradiť?
 					</span>
 				</h2>
 
