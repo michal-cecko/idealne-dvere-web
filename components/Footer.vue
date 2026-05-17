@@ -60,7 +60,8 @@
 			<div
 				class="mt-auto py-9 px-24 border-t border-t-white max-md:border-none max-md:hidden"
 			>
-				Copyright &copy; 2025. Všetky práva vyhradené.
+				Copyright &copy; 2025. Všetky práva vyhradené. | Vyrobil
+				<a href="https://cecko.dev" target="_blank" rel="noopener" class="underline">Michal Čečko</a>
 			</div>
 		</div>
 
@@ -84,7 +85,8 @@
 		</div>
 
 		<div class="hidden py-10 text-center px-6 max-md:block">
-			Copyright &copy; 2025. Všetky práva vyhradené.
+			Copyright &copy; 2025. Všetky práva vyhradené. | Vyrobil
+			<a href="https://cecko.dev" target="_blank" rel="noopener" class="underline">Michal Čečko</a>
 		</div>
 	</footer>
 </template>
